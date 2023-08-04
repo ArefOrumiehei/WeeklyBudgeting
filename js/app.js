@@ -93,9 +93,10 @@ const html = new HTML()
 // eventListeners
 eventListeners()
 function eventListeners(){
-    document.addEventListener('DOMContentLoaded' , function(){
+    document.addEventListener('input' , function(){
         // get user value
-        userBudget = window.prompt('لطفا بودجه هفتگی خود را وارد نمایید :')
+        const inputBudget = document.querySelector('#budget')
+        userBudget = inputBudget.value
         
         // validate user input
         if(userBudget === null || userBudget === '' || userBudget === '0' || userBudget === '00' || userBudget === '000'){
