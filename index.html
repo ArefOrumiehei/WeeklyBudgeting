@@ -1,19 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
-
-    <title>برنامه بودجه بندی هفتگی</title>
+    <link rel="shortcut icon" href="./assets/svg/javascript.svg" type="image/x-icon">
+    <title>بودجه بندی هفتگی</title>
     </head>
     <body dir="rtl">
     <div class="container">
-        <header>
-                <h1 class="text-center">برنامه بودجه بندی هفتگی</h1>
-        </header>
         <section class="main-content">
             <div class="row">
                 <div class="col ">
@@ -23,17 +19,24 @@
                                 <div class="form-group">
                                     <label for="budget">بودجه:</label>
                                     <input type="number" class="form-control" id="budget" placeholder="به تومان">
+                                    <span class="error-text"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="expense">اسم:</label>
                                     <input type="text" class="form-control" id="expense" placeholder="مثلا: ‌تاکسی یا رستوران">
+                                    <span class="error-text"></span>
                                 </div>
                                 <div class="form-group">
                                     <label for="amount"> قیمت به تومان:</label>
                                     <input type="text" class="form-control" id="amount" placeholder="۲۰۰۰۰">
+                                    <span class="error-text"></span>
                                 </div>
                                 
-                                <button type="submit" class="btn btn-primary">اضافه کردن</button>
+                                <div class="buttons">
+                                    <button id="submit-btn" type="submit"  class="btn btn-primary">اضافه کردن</button>
+                                    <button id="edit-btn" class="btn btn-warning">ویرایش بودجه</button>
+                                    <button id="reset-btn" class="btn btn-danger">ریست</button>
+                                </div>
                             </form>
                         
                     </div> <!--.content-->
